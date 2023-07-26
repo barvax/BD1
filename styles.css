@@ -1,0 +1,13 @@
+#gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+  }
+  
+  .gridItem {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    height: 150px;
+  }
+  
