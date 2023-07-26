@@ -5,13 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drag and Drop Grid</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sideMenu.css">
 </head>
 <body>
   <button id="addButton">Add Div</button>
   <div id="gridContainer">
-    <!-- Div elements will be dynamically added here -->
+    <!--  -->
   </div>
-
+  <div class="container">
+    <button id="openMenuButton">Open Menu</button>
+    <div class="sideMenu" id="sideMenu">
+      <!-- Your menu content goes here -->
+      <ul>
+        <li><a href="#">Menu Item 1</a></li>
+        <li><a href="#">Menu Item 2</a></li>
+        <li><a href="#">Menu Item 3</a></li>
+      </ul>
+    </div>
+  </div>
   <script src="script.js"></script>
+  <script src="sideMenu.js"></script>
 </body>
 </html>

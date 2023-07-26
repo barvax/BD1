@@ -1,0 +1,46 @@
+.container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+ul{
+    list-style: none;
+}
+  li , a{
+    text-decoration: none;
+   color: white;
+   padding: 5px;
+   font-size: 18px;
+   margin-top: 20px;
+ 
+    
+  }
+  .sideMenu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initial position: outside the viewport on the left */
+    width: 200px;
+    height: 100%;
+    background-color: #292929;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease;
+    z-index: 2; /* Set a higher z-index to make sure the menu is on top of other elements */
+  }
+  
+  .sideMenu.open {
+    left: 0; /* When open, move to the middle of the left side */
+  }
+  
+  #openMenuButton {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    z-index: 3; /* Set a higher z-index to ensure the button appears on top of the side menu */
+    transform: rotate(-90deg);
+  }
