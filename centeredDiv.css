@@ -1,0 +1,18 @@
+/* Your existing CSS styles go here */
+
+/* Style for the centered div */
+#centeredDiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Set a high z-index to make sure it appears above other elements */
+    display: none; /* Hide the div by default */
+  }
+  

@@ -41,6 +41,13 @@ function createDivItem(item) {
   deleteButton.addEventListener('click', () => {
     deleteDiv(item.id);
   });
+
+  h2.addEventListener('click',()=>{
+    showCenteredDiv(item);
+    
+
+  } );
+
   div.appendChild(deleteButton);
 
   return div;

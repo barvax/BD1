@@ -1,14 +1,92 @@
+html, body, div, p, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+
+body{
+   
+    margin: 0;
+    padding: 0;
+    background-color:#D4E6EC;
+}
+
+.div1{
+    position: fixed;
+    height: 96%;
+    width: 10%;
+    left: 0;
+    top: 2%;
+    left:2%;
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+border-radius: 10px 0px 0px 10px;
+}
+.div2{
+    width: 86%;
+    position: fixed;
+    top: 2%;
+    left: 12%;
+    height: 10%;
+    background-color:#E7EBED;
+    border-radius: 0px 10px 0px 0px;
+}
+.nav-bar{
+   
+   height: 100%;
+    display: flex;
+
+
+}
+.nav-bar > h4, button{
+   
+margin-left: 30px;
+ 
+ }
+.avatar{
+ margin-left: 700px;
+
+    width: 30.8px;
+    height: 30.8px;
+    margin-top: 21.8px;
+    
+   
+}
+.div3{
+    position: absolute;
+    left: 12%;
+    top: 12%;
+    width:86%;
+    background-color:#E7EBED;
+    height: 86%;
+    overflow-y: scroll;
+
+    
+}
+.div3::-webkit-scrollbar {
+    display: none;
+  }
 #gridContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    padding: 50px;
+ 
+    gap: 20px;
+    padding: 30px;
+    margin: auto;
+    
+  
   }
   
   .gridItem {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    height: 150px;
+    background-color: #ffffff;
+    padding: 0px;
+    border-radius: 2px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  height:250px;
   }
   
