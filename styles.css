@@ -239,13 +239,19 @@ border-radius: 10px 0px 0px 10px;
     width: 98%;
     height: 98%;
     background-color: rgba(0, 0, 0, 0.5);
+    left: 12%;
+    top: 12%;
+    width:86%;
+    background-color:#E7EBED;
+    height: 86%;
    
     z-index: 100000;
   }
   
   .left-section {
     flex: 30%;
-    background-color: #f0f0f0;
+    background-color: #fff;
+    
   }
   
   .right-section {
@@ -253,14 +259,16 @@ border-radius: 10px 0px 0px 10px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    margin-left: 1px;
   }
   
   .center-content {
-    flex: 1;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: 50px;
+    
   }
   
   .center-content h1 {
@@ -270,9 +278,9 @@ border-radius: 10px 0px 0px 10px;
   
   .center-content input {
     padding: 8px;
-    margin: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    margin-top: 20px;
   }
   
   .center-content hr {
@@ -287,7 +295,7 @@ border-radius: 10px 0px 0px 10px;
   
   .center-content input[type="date"] {
     padding: 8px;
-    margin: 8px;
+   
     border: 1px solid #ccc;
     border-radius: 4px;
   }
@@ -308,4 +316,36 @@ border-radius: 10px 0px 0px 10px;
     overflow: hidden;
     margin: 5px;
   }
+  #addObservationInput{
+    height: 40px;
+  }
+  .image-input {
+    position: relative;
+  }
   
+  .image-input input[type="text"] {
+    padding: 10px;
+  }
+  
+  .image-input img {
+    position: relative;
+    top: 5px; /* Adjust the positioning of the image */
+    left: 5px; /* Adjust the positioning of the image */
+    width: 20px; /* Adjust the size of the image */
+    cursor: pointer;
+  }
+  #action-list-items li{
+color: #292929;
+width: 150px;
+
+
+  }
+  #action-list-items {
+    position: absolute;
+    color: #292929;
+    overflow: scroll;
+    height: 86%;
+    left: 2%;
+    top:12%;
+    
+      }

@@ -128,21 +128,34 @@ function closePopUp(){
   popup.style.display ='none';
 }
 
+
 function OpenActionPopup(itemId){
   popup.style.display ='flex';
   let actionIndex = document.getElementById('popUpIndexNumber');
- 
+  let popUpActioTitle = document.getElementById('popUpActioTitle');
+  
   const item = divData.find((item) => item.id === itemId);
   if (item) {
     tempItemId=itemId
     console.log(itemId)
     actionIndex.innerHTML=itemId;
+    popUpActioTitle.innerHTML = item.actionName;
     
    
   }
 
 }
 
+const imageElement = document.getElementById('myImage');
+imageElement.addEventListener('click', function() {
+  // Call your function here
+  yourFunction();
+});
+
+function yourFunction() {
+  // Your function logic here
+  console.log('Image clicked! Function called.');
+}
 function SubmitPopUpForm(){
   let actionInput = document.getElementById('addActionInput');
   let observationInput = document.getElementById('addObservationInput');
@@ -161,3 +174,22 @@ function SubmitPopUpForm(){
   createDivs();
 }
 
+
+function generateActionList(numberOfActions) {
+  const actionListElement = document.getElementById('action-list-items');
+
+  for (let i = 1; i <= numberOfActions; i++) {
+    const actionItem = document.createElement('li');
+    actionItem.textContent = `Action ${i}`;
+    actionListElement.appendChild(actionItem);
+    actionItem.addEventListener('click',()=>{
+      let actionInput = document.getElementById('addActionInput');
+      let popUpActioTitle = document.getElementById('popUpActioTitle');
+      actionInput.value = actionItem.textContent;
+      popUpActioTitle.innerHTML = actionItem.textContent;
+    })
+  }
+}
+
+// Call the function with the desired number of actions (e.g., 30)
+generateActionList(30);
