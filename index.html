@@ -3,12 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drag and Drop Grid</title>
+  <title>BD</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="sideMenu.css">
   <link rel="stylesheet" href="centeredDiv.css">
 </head>
 <body>
+    
+  <!-- Popup Div -->
+  <div class="popup" id="popup">
+    <div class="left-section">
+      <!-- Content for the left section -->
+      Left Section (30%)
+    </div>
+    <div class="right-section">
+      <div class="center-content">
+        <h5 id="popUpIndexNumber">Center H1</h5>
+        <h1>Center H1</h1>
+        <input type="text" id='addActionInput' placeholder="Add Action">
+        <input type="text" id='addObservationInput' placeholder="Observations">
+        <hr>
+        <h6>Horizontal Line</h6>
+        <input type="date">
+      </div>
+      <div class="bottom-content">
+        <button  onclick="closePopUp()">Close</button>
+        <button onclick="SubmitPopUpForm()" >Apply</button>
+      </div>
+    </div>
+  </div>
     <div class="parent">
         <div class="div1">   
             <ul class="vertical-list">
@@ -51,9 +74,32 @@
            
         </div>
         <div class="div3">
+            <!-- 
+       <div class="square-div">
+                <div class="top-content">
+                  <h5>Heading</h5>
+                  <img src="image.jpg" alt="Image">
+                </div>
+                <h4>Center H4</h4>
+                <img src="image1.jpg" alt="Image 1">
+                <h4>After Image H4</h4>
+                <h4>Another H4</h4>
+                <div class="bottom-content">
+                  <img src="image2.jpg" alt="Image 2">
+                  <img src="image3.jpg" alt="Image 3">
+                  <h5>Bottom H5</h5>
+                </div>
+              </div>
+
+            -->
+     
+            
              <div id="gridContainer">
         
           </div>
+        
+
+
         </div>
         </div>
   
