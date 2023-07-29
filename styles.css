@@ -16,6 +16,30 @@ body{
     background-color:#D4E6EC;
 }
 
+  
+  .vertical-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .vertical-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    
+  }
+  
+  .vertical-list img {
+    max-width: 25px;
+  }
+  
+  .vertical-list h5 {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+
 .div1{
     position: fixed;
     height: 96%;
@@ -36,27 +60,55 @@ border-radius: 10px 0px 0px 10px;
     background-color:#E7EBED;
     border-radius: 0px 10px 0px 0px;
 }
-.nav-bar{
-   
-   height: 100%;
+
+  
+  .navbar {
     display: flex;
-
-
-}
-.nav-bar > h4, button{
-   
-margin-left: 30px;
- 
- }
-.avatar{
- margin-left: 700px;
-
-    width: 30.8px;
-    height: 30.8px;
-    margin-top: 21.8px;
-    
-   
-}
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    color: #292929;
+  }
+  
+  .logo {
+    font-size: 14px;
+    margin-left: 30px;
+  }
+  
+  .nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-items li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .right-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .right-items img {
+    max-height: 24px;
+  }
+  
+  .right-items input {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  .right-items h4 {
+    margin: 0;
+  }
+  
 .div3{
     position: absolute;
     left: 12%;
@@ -68,9 +120,49 @@ margin-left: 30px;
 
     
 }
+
+/* Your existing CSS styles go here */
+
+/* Style the dropdown menu */
+.dropdown-menu {
+    position: relative;
+    border: none;
+    width: 100px;
+  }
+  
+  .dropdown-menu select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color:transparent;
+  }
+  option{
+    font-size: 26px;
+  }
+  
+  /* Hide the default dropdown arrow */
+  .dropdown-menu select::-ms-expand {
+    display: none;
+  }
+  
+  .dropdown-menu select::-webkit-appearance {
+    display: none;
+  }
+  
+  /* Style the custom dropdown arrow */
+  .dropdown-menu select::after {
+    content: '\25BC'; /* Unicode character for a downward arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent the arrow from being clickable */
+  }
+  
 .div3::-webkit-scrollbar {
     display: none;
   }
+
 #gridContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
