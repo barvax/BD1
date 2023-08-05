@@ -9,8 +9,13 @@
   <link rel="stylesheet" href="centeredDiv.css">
 </head>
 <body>
+
+    <!--sample Popup Div -->
+  <div class="popup" id="popupSample">
+<button onclick="CloseSamplePopup()">Close</button>
+  </div>
     
-  <!-- Popup Div -->
+  <!--actoin Popup Div -->
   <div class="popup" id="popup">
     <div class="left-section">
       <!-- Content for the left section -->
@@ -29,9 +34,21 @@
         </div>
     
         <input type="text" id='addObservationInput' placeholder="Observations">
+        <div style="display: flex;">
+            <h5 id="Material-name-form" style="margin: 10px 0 0px 0;">Material</h5>
+            <img src="trash-solid.svg" style="width: 15px;">
+        </div>
+      
+        <input type="number" id='addOMaterialInput' placeholder="amount">
         <hr>
         <h6>date</h6>
         <input type="date">
+        <input type="text" id="timeInput" placeholder="Enter time in format 12:00">
+        <div>
+            <h5 style="display: inline-block;">Instractions</h5>
+        <h6 style="display: inline-block;" id="right-section-instractions">Instractions</h6>
+      
+        </div>
       </div>
       <div class="bottom-content">
         <button  onclick="closePopUp()">Close</button>

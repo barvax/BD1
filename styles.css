@@ -247,6 +247,7 @@ border-radius: 10px 0px 0px 10px;
    
     z-index: 100000;
   }
+ 
   
   .left-section {
     flex: 30%;
@@ -336,7 +337,8 @@ border-radius: 10px 0px 0px 10px;
   }
   #action-list-items li{
 color: #292929;
-width: 150px;
+width: 200px;
+font-size: 12px;
 
 
   }
